@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewAndActivities.MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8EFF93"
+        android:text="Lutemon"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btViewAddLutemon"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="switchAddNewLutemon"
+        android:shadowColor="#9F4545"
+        android:text="Add new Lutemon"
+        android:textColorHighlight="#CD7272"
+        android:textColorLink="#A65252"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:rippleColor="#8E3C3C"
+        app:strokeColor="#953E3E" />
+
+    <Button
+        android:id="@+id/btViewListLutemons"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="switchToListView"
+        android:text="List all Lutemons"
+        app:layout_constraintEnd_toEndOf="@+id/btViewAddLutemon"
+        app:layout_constraintStart_toStartOf="@+id/btViewAddLutemon"
+        app:layout_constraintTop_toBottomOf="@+id/btViewAddLutemon" />
+
+    <Button
+        android:id="@+id/btViewTransferLutemons"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Transfer Lutemons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btViewListLutemons" />
+
+    <Button
+        android:id="@+id/btViewCombatArena"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Combat arena"
+        app:layout_constraintEnd_toEndOf="@+id/btViewTransferLutemons"
+        app:layout_constraintStart_toStartOf="@+id/btViewTransferLutemons"
+        app:layout_constraintTop_toBottomOf="@+id/btViewTransferLutemons" />
+
+    <Button
+        android:id="@+id/btStatistic"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Statistics"
+        app:layout_constraintEnd_toEndOf="@+id/btViewCombatArena"
+        app:layout_constraintStart_toStartOf="@+id/btViewCombatArena"
+        app:layout_constraintTop_toBottomOf="@+id/btViewCombatArena" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
