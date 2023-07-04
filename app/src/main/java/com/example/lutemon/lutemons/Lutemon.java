@@ -2,7 +2,7 @@ package com.example.lutemon.lutemons;
 
 import java.io.Serializable;
 
-public class Lutemon implements Serializable {
+public abstract class Lutemon implements Serializable {
     protected String name;
     protected int photo;
     protected String color;
@@ -90,8 +90,16 @@ public class Lutemon implements Serializable {
         return fightCount;
     }
 
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
     public int getTrainingCount() {
         return trainingCount;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     public int getLoseCount() {
@@ -108,4 +116,6 @@ public class Lutemon implements Serializable {
     public static int incrementIdCounter() {
         return ++idCounter;
     }
+
+    public void increaseStats(){}
 }

@@ -40,6 +40,16 @@ public class Storage {
         return null;
     }
 
+    public Lutemon getLutemonByName(String Name) {
+        int i = 0;
+        for (Lutemon lutemon : lutemons) {
+            if (lutemon.getName().equals(Name)) {
+                return lutemon;
+            }
+        }
+        return null;
+    }
+
     // Method to initialize context in MainActivity:
     public void init(Context context) {
         this.context = context.getApplicationContext();
@@ -47,7 +57,7 @@ public class Storage {
     }
 
     // Save Lutemons into file:
-    public void saveLutemon(Lutemon lutemon) {
+    public void saveLutemons() {
         try {
             ObjectOutputStream userWriter = new ObjectOutputStream(context.openFileOutput("lutemons.data", Context.MODE_PRIVATE));
             userWriter.writeObject(lutemons);

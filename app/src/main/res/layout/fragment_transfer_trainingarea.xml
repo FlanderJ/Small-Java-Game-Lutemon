@@ -35,7 +35,7 @@
             android:id="@+id/rbTransferToCombat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Training" />
+            android:text="Combat" />
     </RadioGroup>
 
     <TextView

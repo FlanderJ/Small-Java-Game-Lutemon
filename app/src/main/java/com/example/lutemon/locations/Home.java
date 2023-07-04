@@ -14,4 +14,8 @@ public class Home {
     public void createLutemon(Lutemon lutemon) {
 
     }
+
+    public void healLutemon(Lutemon lutemon) {
+        lutemon.setHealth(lutemon.getMaxHealth());
+    }
 }

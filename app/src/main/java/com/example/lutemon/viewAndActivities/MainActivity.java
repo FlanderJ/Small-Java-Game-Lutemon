@@ -34,4 +34,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ListLutemonsActivity.class);
         startActivity(intent);
     }
+
+    public void switchToTransverView(View view) {
+        Intent intent = new Intent(this, TransferLutemonsActivity.class);
+        startActivity(intent);
+    }
 }

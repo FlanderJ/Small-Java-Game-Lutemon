@@ -41,27 +41,27 @@ public class AddLutemonActivity extends AppCompatActivity {
             case ("White"):
                 Lutemon lutemonWhite = new White(lutemonName);
                 Storage.getInstance().addLutemon(lutemonWhite);
-                Storage.getInstance().saveLutemon(lutemonWhite);
+                Storage.getInstance().saveLutemons();
                 break;
             case ("Black"):
                 Lutemon lutemonBlack = new Black(lutemonName);
                 Storage.getInstance().addLutemon(lutemonBlack);
-                Storage.getInstance().saveLutemon(lutemonBlack);
+                Storage.getInstance().saveLutemons();
                 break;
             case ("Pink"):
                 Lutemon lutemonPink = new Pink(lutemonName);
                 Storage.getInstance().addLutemon(lutemonPink);
-                Storage.getInstance().saveLutemon(lutemonPink);
+                Storage.getInstance().saveLutemons();
                 break;
             case ("Green"):
                 Lutemon lutemonGreen = new Green(lutemonName);
                 Storage.getInstance().addLutemon(lutemonGreen);
-                Storage.getInstance().saveLutemon(lutemonGreen);
+                Storage.getInstance().saveLutemons();
                 break;
             case ("Orange"):
                 Lutemon lutemonOrange = new Orange(lutemonName);
                 Storage.getInstance().addLutemon(lutemonOrange);
-                Storage.getInstance().saveLutemon(lutemonOrange);
+                Storage.getInstance().saveLutemons();
                 break;
         }
 

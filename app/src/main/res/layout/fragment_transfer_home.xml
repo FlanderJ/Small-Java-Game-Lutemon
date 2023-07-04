@@ -29,13 +29,13 @@
             android:id="@+id/rbTransferToHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Home" />
+            android:text="Training" />
 
         <RadioButton
             android:id="@+id/rbTransferToCombat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Training" />
+            android:text="Combat" />
     </RadioGroup>
 
     <TextView

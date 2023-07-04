@@ -10,4 +10,11 @@ public class White extends Lutemon implements Serializable {
         super(name, R.drawable.white, "white", 5, 4, 10, 0, 20, 20, Lutemon.getIdCounterValue(), 0, 0, 0, 0, "Home");
         Lutemon.incrementIdCounter();
     }
+    public void increaseStats() {
+        this.attack += 1;
+        this.defence += 3;
+        this.dodge += 2;
+        this.maxHealth += 3;
+        this.experience +=1;
+    }
 }

@@ -28,6 +28,7 @@
         </activity>
         <activity
             android:name=".viewAndActivities.ListLutemonsActivity" />
+        <activity android:name=".viewAndActivities.TransferLutemonsActivity" />
     </application>
 
 </manifest>

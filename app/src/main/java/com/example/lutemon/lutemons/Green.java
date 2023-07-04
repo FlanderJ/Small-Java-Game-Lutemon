@@ -12,5 +12,11 @@ public class Green extends Lutemon implements Serializable {
         Lutemon.incrementIdCounter();
     }
 
-
+    public void increaseStats() {
+        this.attack += 2;
+        this.defence += 2;
+        this.dodge += 2;
+        this.experience +=1;
+        this.maxHealth += 3;
+    }
 }
