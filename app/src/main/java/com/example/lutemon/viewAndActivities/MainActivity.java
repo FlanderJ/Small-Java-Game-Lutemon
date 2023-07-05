@@ -39,4 +39,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TransferLutemonsActivity.class);
         startActivity(intent);
     }
+
+    public void switchToBattleFieldView(View view) {
+        Intent intent = new Intent(this, BattleFieldActivity.class);
+        startActivity(intent);
+    }
 }

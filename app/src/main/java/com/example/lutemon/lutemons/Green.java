@@ -18,5 +18,6 @@ public class Green extends Lutemon implements Serializable {
         this.dodge += 2;
         this.experience +=1;
         this.maxHealth += 3;
+        this.trainingCount += 1;
     }
 }

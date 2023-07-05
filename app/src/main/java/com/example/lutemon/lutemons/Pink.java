@@ -16,5 +16,6 @@ public class Pink extends Lutemon implements Serializable {
         this.dodge += 3;
         this.experience +=1;
         this.maxHealth += 2;
+        this.trainingCount += 1;
     }
 }

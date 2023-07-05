@@ -45,7 +45,7 @@ public class BattleFieldFragment extends Fragment {
         });
     }
 
-    // Form Lutemon selection by using radiobuttons:
+    // Form Lutemon selection by using Checkboxes:
     public void createLutemonSelection(View view) {
         int i = 0;
         // Get the LinearLayout from fragment:

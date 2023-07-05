@@ -16,5 +16,6 @@ public class White extends Lutemon implements Serializable {
         this.dodge += 2;
         this.maxHealth += 3;
         this.experience +=1;
+        this.trainingCount += 1;
     }
 }

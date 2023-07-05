@@ -16,5 +16,6 @@ public class Black extends Lutemon implements Serializable {
         this.dodge += 2;
         this.experience +=1;
         this.maxHealth += 1;
+        this.trainingCount += 1;
     }
 }

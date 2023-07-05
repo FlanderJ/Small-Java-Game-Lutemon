@@ -82,6 +82,22 @@ public abstract class Lutemon implements Serializable {
         return id;
     }
 
+    public void setWinCount() {
+        this.winCount += 1;
+    }
+
+    public void setFightCount() {
+        this.fightCount += 1;
+    }
+
+    public void setTrainingCount() {
+        this.trainingCount += 1;
+    }
+
+    public void setLoseCount() {
+        this.loseCount += 1;
+    }
+
     public int getWinCount() {
         return winCount;
     }
@@ -118,4 +134,10 @@ public abstract class Lutemon implements Serializable {
     }
 
     public void increaseStats(){}
+
+    public void increaseStatsAfterWin () {
+        increaseStats();
+        setWinCount();
+        setFightCount();
+    }
 }

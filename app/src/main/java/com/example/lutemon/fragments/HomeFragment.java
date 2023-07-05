@@ -76,7 +76,6 @@ public class HomeFragment extends Fragment {
             if (cbLutemon.isChecked()) {
 
                 String selectedLutemon = (String) cbLutemon.getTag();
-                System.out.println(selectedLutemon);
                 Lutemon lutemonToTransfer = Storage.getInstance().getLutemonByName(selectedLutemon);
                 lutemonToTransfer.setLocation(selectedLocation);
                 Storage.getInstance().saveLutemons();
