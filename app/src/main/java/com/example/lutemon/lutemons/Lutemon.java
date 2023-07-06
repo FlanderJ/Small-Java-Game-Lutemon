@@ -5,7 +5,6 @@ import java.io.Serializable;
 public abstract class Lutemon implements Serializable {
     protected String name;
     protected int photo;
-    protected String color;
 
     protected String location;
     protected int attack;
@@ -48,10 +47,6 @@ public abstract class Lutemon implements Serializable {
 
     public int getPhoto() {
         return photo;
-    }
-
-    public String getColor() {
-        return color;
     }
 
     public int getAttack() {
@@ -110,10 +105,6 @@ public abstract class Lutemon implements Serializable {
         this.health = health;
     }
 
-    public int getTrainingCount() {
-        return trainingCount;
-    }
-
     public void setLocation(String location) {
         this.location = location;
     }
@@ -139,5 +130,9 @@ public abstract class Lutemon implements Serializable {
         increaseStats();
         setWinCount();
         setFightCount();
+    }
+    public void increaseLoser() {
+        setFightCount();
+        setLoseCount();
     }
 }

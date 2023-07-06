@@ -9,7 +9,6 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
 public class Storage {
-    protected String name;
     protected ArrayList<Lutemon> lutemons = new ArrayList<>();
 
     Context context;
@@ -28,16 +27,6 @@ public class Storage {
     }
     public ArrayList<Lutemon> getLutemons() {
         return lutemons;
-    }
-
-    public Lutemon getLutemonById(int Id) {
-        int i = 0;
-        for (Lutemon lutemon : lutemons) {
-            if (lutemon.getId() == Id) {
-                return lutemon;
-            }
-        }
-        return null;
     }
 
     public Lutemon getLutemonByName(String Name) {
@@ -81,9 +70,5 @@ public class Storage {
             System.out.println("Lutemonien lataaminen epäonnistui");
             e.printStackTrace();
         }
-    }
-
-    public void listLutemons() {
-
     }
 }

@@ -11,13 +11,11 @@ import com.example.lutemon.lutemons.Storage;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Storage storage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.storage = Storage.getInstance();
 
         // Initialize context:
         Storage.getInstance().init(getApplicationContext());
@@ -25,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Storage.getInstance().loadLutemons();
     }
 
-    public void switchAddNewLutemon(View view) {
+    public void switchAddNewLutemonView(View view) {
         Intent intent = new Intent(this, AddLutemonActivity.class);
         startActivity(intent);
     }
@@ -42,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void switchToBattleFieldView(View view) {
         Intent intent = new Intent(this, BattleFieldActivity.class);
+        startActivity(intent);
+    }
+
+    public void switchToStatisticsView(View view) {
+        Intent intent = new Intent(this, StatisticsActivity.class);
         startActivity(intent);
     }
 }

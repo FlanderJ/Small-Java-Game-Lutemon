@@ -30,6 +30,7 @@
             android:name=".viewAndActivities.ListLutemonsActivity" />
         <activity android:name=".viewAndActivities.TransferLutemonsActivity" />
         <activity android:name=".viewAndActivities.BattleFieldActivity" />
+        <activity android:name=".viewAndActivities.StatisticsActivity" />
     </application>
 
 </manifest>

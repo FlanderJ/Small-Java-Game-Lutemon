@@ -17,5 +17,6 @@ public class Orange extends Lutemon implements Serializable {
         this.experience +=1;
         this.maxHealth += 1;
         this.trainingCount += 1;
+        this.setTrainingCount();
     }
 }

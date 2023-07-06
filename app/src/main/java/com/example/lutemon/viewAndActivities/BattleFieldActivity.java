@@ -19,7 +19,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.lutemon.R;
-import com.example.lutemon.locations.BattleField;
 import com.example.lutemon.lutemons.Lutemon;
 import com.example.lutemon.lutemons.Storage;
 
@@ -273,7 +272,7 @@ public class BattleFieldActivity extends AppCompatActivity {
 
     public void afterFightStats (Lutemon winner, Lutemon loser) {
         winner.increaseStatsAfterWin();
-        loser.setLoseCount();
+        loser.increaseLoser();
         Storage.getInstance().saveLutemons();
     }
 }
